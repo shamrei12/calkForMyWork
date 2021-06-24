@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+            <div class="container">
+                <div class="header-up">
+                    <h1>Подсчет переработки</h1>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section class="form-calc">
+            <div class="container">
+            <div class="backgrond_form">
+                <h2>Перевод времени в журнальный формат</h2>
+                <div class="toogle-button">
+                    <label for="toogle-btn">Журнальный</label>
+                    <input type="checkbox" id="toogle-btn" class="toogle-btn" onchange="checkbox()">
+                    <label for="toogle-btn">Стандартный</label>
+                </div>
+                <form action="#" class="form">
+                    <input type="text" id="time-start" class="time-start" placeholder="Начало">
+                    <input type="text" id="time-finish" class="time-finish" placeholder="Окончание">
+                    <input type="text" class="time-output" placeholder="Результат" readonly>
+                    <input type="text" class="time-back">
+                    <button type="submit" class="btn" onclick="CalcFirstOutput()">Перевести</button>
+                </form>
+            </div>
+            </div>  
+        </section>
+    </main>
+    <script src="js/calc.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/calcBack.js"></script>
+</body>
+</html>

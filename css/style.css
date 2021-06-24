@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 968px;
+    margin: 0 auto;
+}
+.header-up{
+    text-align: center;
+    margin-bottom: 140px;
+}
+.header-up h1{
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.toogle-button{
+    margin-left: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-content: center;
+    width: 250px;
+    margin: 0 auto;
+    height: 40px;
+
+}
+.toogle-button label{
+    align-items: center;
+    align-content: center;
+}
+input.toogle-btn{
+    
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d9dadc;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #fff;
+    transition-duration: 200ms;
+}
+input.toogle-btn::after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+input.toogle-btn:checked{
+    border-color: #4ef164;
+    box-shadow: inset 20px 0 0 0  #43f164;
+}
+input.toogle-btn:checked::after{
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+.form-calc h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.backgrond_form{
+    border: .5px solid #000;
+    margin: 0 auto;
+    width: 400px;  
+}
+.form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a a a a b b b b"
+    "c c c c c c c c"
+    "e e e e e e e e"
+    "d d d d d d d d";
+    justify-items: center;
+    margin: 0 auto;
+    width: 250px;
+    padding-left: -10px;
+    padding-bottom: 30px;
+}
+.form label{
+    margin-top: 30px;
+}
+.form .time-output{
+    width: 150px;
+}
+.time-start{
+    grid-area: a;
+}
+.time-finish{
+    grid-area: b;
+}
+.time-output{
+    grid-area: c;
+}
+.time-back-display{
+    grid-area: e;
+}
+.btn{
+    grid-area: d;
+}
+.form input{
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    outline: none;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+.time-back{
+    display: none;
+}
+.time-display-none{
+    display: none;
+}
+.time-back-display{
+    width: 200px;
+}
+
+
